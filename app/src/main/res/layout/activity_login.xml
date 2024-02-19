@@ -64,7 +64,8 @@
             android:touchTarget="@+id/editTextUsername"
             app:layout_constraintTop_toBottomOf="@+id/txgmail"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            />
 
 
         <TextView
@@ -94,15 +95,13 @@
             app:layout_constraintEnd_toEndOf="parent" />
 
         <Button
-            android:id="@+id/buttonlogin"
+            android:id="@+id/buttonLogin"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="33dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:text="Iniciar Sesión"
-            android:backgroundTint="@null"
-            android:background="@drawable/backgorundboton"
             app:layout_constraintTop_toBottomOf="@+id/edtpsw"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
@@ -118,7 +117,7 @@
             android:textSize="12sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/buttonlogin" />
+            app:layout_constraintTop_toTopOf="@+id/buttonLogin" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

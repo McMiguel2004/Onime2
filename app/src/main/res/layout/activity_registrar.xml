@@ -4,15 +4,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/rectangle_gradient_s_purple_801_c_white_a700_e_purple_801">
+
+    android:background="@drawable/rectangle_gradient_s_purple_801_c_white_a700_e_purple_801"
+    >
 
     <ImageView
-        android:id="@+id/imagelogin"
+        android:id="@+id/logoimg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:src="@drawable/Logoentero"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/logoentero"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.923"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -20,24 +23,143 @@
         android:id="@+id/registro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="8dp"
         android:text="Registrate"
         android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/logoimg"
         tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        android:textStyle="bold"
         />
 
     <TextView
         android:id="@+id/textregistro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
         android:layout_marginTop="4dp"
-        tools:ignore="MissingConstraints"
         android:text="Date de alta introduciendo los siguientes datos"
         android:textSize="12sp"
         app:layout_constraintTop_toBottomOf="@+id/registro"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+
+    <TextView
+        android:id="@+id/textnom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Nombre:"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/textregistro"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/edtxnm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="Tunombre"
+        android:inputType="text"
+        android:background="#FFFFFF"
+        android:padding="5dp"
+        android:touchTarget="@+id/editTextUsername"
+        app:layout_constraintTop_toBottomOf="@+id/textnom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         />
 
 
+    <TextView
+        android:id="@+id/gmtx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Correo:"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/edtxnm"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="tucorreo@hola.com"
+        android:inputType="text"
+        android:background="#FFFFFF"
+        android:padding="5dp"
+        android:touchTarget="@+id/editTextUsername"
+        app:layout_constraintTop_toBottomOf="@+id/gmtx"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/txps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Contraseña:"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUsername"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/edps"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="********"
+        android:inputType="text"
+        android:background="#FFFFFF"
+        android:padding="5dp"
+        android:touchTarget="@+id/editTextUsername"
+        app:layout_constraintTop_toBottomOf="@+id/txps"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <Button
+        android:id="@+id/butonregis"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Registrate"
+        app:layout_constraintTop_toBottomOf="@+id/edps"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textotoinicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="60dp"
+        android:text="¿Ya tienes una cuenta? "
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/butonregis" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
